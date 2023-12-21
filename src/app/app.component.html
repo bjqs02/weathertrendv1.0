@@ -15,14 +15,17 @@
       <div class="spinner-border text-success" role="status">
       </div>
     </div>
+
     <!-- The Highchart component -->
-    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions.temperatureChart"
-      style="width: 100%; height: 400px; display: block;" class="rounded">
-    </highcharts-chart>
-    <br />
-    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions.humidityChart"
-      style="width: 100%; height: 400px; display: block;" class="rounded">
-    </highcharts-chart>
+    <div class="d-lg-flex">
+      <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions.temperatureChart"
+        style="width: 100%; height: 400px; display: block;" class="rounded w-100 mx-1">
+      </highcharts-chart>
+      <br />
+      <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions.humidityChart"
+        style="width: 100%; height: 400px; display: block;" class="rounded w-100 mx-1">
+      </highcharts-chart>
+    </div>
     <br />
 
     <!-- The AG Grid component -->
