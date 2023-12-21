@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* Core Grid CSS */
+@import 'ag-grid-community/styles/ag-grid.css';
+/* Quartz Theme Specific CSS */
+@import 'ag-grid-community/styles/ag-theme-quartz.css';
+
+body {
+  font-family: 'Courier New', Courier, monospace !important;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 1vh;
+}
+
+.ag-header-group-cell .ag-header-group-cell-label .ag-header-group-text {
+  width: 100vw;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: green;
+}
+
+.ag-cell {
+  text-align: center;
+}
+
+.ag-header-cell-label .ag-header-cell-text {
+  /* Force the width corresponding to how much width
+  we need once the text is laid out vertically */
+  text-align: center;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #ffffff !important;
+  box-shadow: inset 0 0.5px 0.5px rgba(0, 0, 0, 0.05), 0 0 8px #9f9f9f !important;
+}
